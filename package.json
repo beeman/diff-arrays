@@ -1,18 +1,19 @@
 {
-  "name": "array-difference",
-  "version": "0.0.1",
-  "description": "Utility method for finding the difference between arrays",
-  "main": "src/array-difference.js",
+  "name": "diff-arrays",
+  "version": "1.0.0",
+  "description": "Utility method for finding the difference between arrays, showing which array has which differences",
+  "main": "src/diff-arrays.js",
   "scripts": {
     "test": "make test"
   },
-  "repository": "git@github.com:jugglinmike/array-difference.git",
+  "repository": "git@github.com:beeman/diff-arrays.git",
   "keywords": [
     "utility",
-    "array"
+    "array",
+    "diff"
   ],
-  "author": "Mike Pennisi",
-  "license": "MIT Expat",
+  "author": "Bram Borggreve",
+  "license": "MIT",
   "devDependencies": {
     "tape": "~1.0.4"
   },

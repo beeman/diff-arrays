@@ -16,18 +16,21 @@
 		return -1;
 	};
 
-	function difference(a, b) {
+	function difference(lhs, rhs) {
 		var idx, len;
-		var res = [];
+		var res = {
+			lhs: [],
+			rhs: []
+		};
 
-		for (idx = 0, len = a.length; idx < len; ++idx) {
-			if (indexOf.call(b, a[idx]) === -1) {
-				res.push(a[idx]);
+		for (idx = 0, len = lhs.length; idx < len; ++idx) {
+			if (indexOf.call(rhs, lhs[idx]) === -1) {
+				res.lhs.push(lhs[idx]);
 			}
 		}
-		for (idx = 0, len = b.length; idx < len; ++idx) {
-			if (indexOf.call(a, b[idx]) === -1) {
-				res.push(b[idx]);
+		for (idx = 0, len = rhs.length; idx < len; ++idx) {
+			if (indexOf.call(lhs, rhs[idx]) === -1) {
+				res.rhs.push(rhs[idx]);
 			}
 		}
 		return res;
